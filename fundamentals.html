@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="light" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PyChristus | Fundamentos de Python</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/fundamentals.css" />
+  </head>
+  <body>
+    <!-- TopNavBar -->
+    <header class="top-bar">
+      <div class="brand-container">
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo light-logo"
+          src="assets/imgs/logo-light-theme.png"
+        />
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo dark-logo"
+          src="assets/imgs/logo-dark-theme.png"
+        />
+        <span class="brand-name font-headline-md font-bold">PyChristus</span>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link font-headline-sm" href="index.html">Início</a>
+        <a class="nav-link active font-headline-sm" href="fundamentals.html"
+          >Guia</a
+        >
+        <a class="nav-link font-headline-sm" href="exercises.html"
+          >Exercícios</a
+        >
+        <a class="nav-link font-headline-sm" href="#">Referência</a>
+        <a class="nav-link font-headline-sm" href="#">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="app-container">
+      <!-- SideNavBar -->
+      <aside class="sidebar custom-scrollbar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title font-headline-sm font-bold">Documentação</h3>
+          <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
+        </div>
+        <nav class="sidebar-menu">
+          <a class="sidebar-link font-label-md" href="index.html">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="sidebar-link-text">Introdução</span>
+          </a>
+          <a class="sidebar-link active font-label-md" href="fundamentals.html">
+            <span class="material-symbols-outlined" data-icon="menu_book"
+              >menu_book</span
+            >
+            <span class="sidebar-link-text">Fundamentos</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="flow-control.html">
+            <span class="material-symbols-outlined" data-icon="alt_route"
+              >alt_route</span
+            >
+            <span class="sidebar-link-text">Controle de Fluxo</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="loops.html">
+            <span class="material-symbols-outlined" data-icon="loop">loop</span>
+            <span class="sidebar-link-text">Estruturas de Repetição</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="data-structures.html">
+            <span class="material-symbols-outlined" data-icon="reorder"
+              >reorder</span
+            >
+            <span class="sidebar-link-text">Estruturas de Dados</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="functions.html">
+            <span class="material-symbols-outlined" data-icon="functions"
+              >functions</span
+            >
+            <span class="sidebar-link-text">Funções</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="exercises.html">
+            <span class="material-symbols-outlined" data-icon="edit_note"
+              >edit_note</span
+            >
+            <span class="sidebar-link-text">Exercícios</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <div class="content-container">
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumb font-label-md">
+            <span class="breadcrumb-item">Guia</span>
+            <span class="material-symbols-outlined breadcrumb-separator"
+              >chevron_right</span
+            >
+            <span class="breadcrumb-item active">Fundamentos</span>
+          </nav>
+
+          <article class="article">
+            <!-- Hero Section -->
+            <header class="article-header">
+              <h1 class="article-title font-display">Fundamentos de Python</h1>
+              <div class="title-accent-line"></div>
+              <p class="font-body-lg">
+                Nesta seção, exploramos os pilares que sustentam a linguagem
+                Python. Você aprenderá como o computador armazena informações e
+                como realizamos operações básicas.
+              </p>
+            </header>
+
+            <div class="article-section">
+              <!-- Section 1 -->
+              <section
+                id="o-que-sao-fundamentos"
+                class="reveal-section hidden-reveal"
+              >
+                <h2 class="font-headline-md">O que são Fundamentos?</h2>
+                <p class="font-body-md">
+                  Os fundamentos de uma linguagem de programação referem-se às
+                  regras básicas de sintaxe, gramática e estrutura que permitem
+                  que o código seja interpretado corretamente pela máquina.
+                </p>
+                <p class="font-body-md">
+                  Dominar esses conceitos é como aprender o alfabeto antes de
+                  escrever um romance: sem entender como Python organiza blocos
+                  de código ou lida com notas explicativas, é impossível
+                  construir aplicações complexas e escaláveis.
+                </p>
+              </section>
+
+              <!-- Section 2: Comentários -->
+              <section
+                id="comentarios-em-python"
+                class="reveal-section hidden-reveal"
+              >
+                <h2 class="font-headline-md">Comentários em Python</h2>
+                <p class="font-body-md">
+                  Comentários são notas para humanos que o Python ignora. Use
+                  <code
+                    class="font-code-block"
+                    style="
+                      background-color: var(--color-surface-container);
+                      padding: 0.25rem 0.5rem;
+                      border-radius: var(--radius-default);
+                      color: var(--color-primary);
+                    "
+                    >#</code
+                  >
+                  para comentários de uma linha.
+                </p>
+
+                <!-- Code Shell (Terminal Shell) -->
+                <div class="code-shell">
+                  <div class="code-shell-header">
+                    <span class="code-shell-title">Python Shell</span>
+                    <button
+                      class="code-shell-copy-btn"
+                      onclick="alert('Código copiado!')"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                  <pre><code><span class="code-comment"># Isso é um comentário</span>
+<span class="code-function">print</span>(<span class="code-string">"Python é incrível"</span>) <span class="code-comment"># Comentário após código</span></code></pre>
+                </div>
+
+                <!-- Tip Box (Admonition) -->
+                <div class="admonition admonition-info">
+                  <span
+                    class="material-symbols-outlined admonition-icon"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >lightbulb</span
+                  >
+                  <div class="admonition-content">
+                    <p class="admonition-title font-body-md">
+                      Dica Profissional
+                    </p>
+                    <p class="admonition-text font-body-sm">
+                      Use comentários para explicar o 'porquê' do código, não o
+                      'quê' ele faz. O código deve ser legível por si só.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section 3: Indentação -->
+              <section id="indentacao" class="reveal-section hidden-reveal">
+                <h2 class="font-headline-md">Indentação</h2>
+                <p class="font-body-md">
+                  Em Python, o espaço no início da linha é obrigatório para
+                  definir blocos de código. Diferente de outras linguagens que
+                  usam chaves
+                  <code>{}</code>, Python usa o vazio para criar hierarquia.
+                </p>
+
+                <!-- Error Box (Admonition Danger) -->
+                <div class="admonition admonition-danger">
+                  <span
+                    class="material-symbols-outlined admonition-icon"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >error</span
+                  >
+                  <div class="admonition-content">
+                    <p class="admonition-title font-body-md">Erro Comum</p>
+                    <p class="admonition-text font-body-sm">
+                      O erro
+                      <code
+                        class="font-code-block"
+                        style="
+                          background-color: var(--color-error-container);
+                          color: var(--color-error);
+                          font-weight: bold;
+                          padding: 0.25rem 0.5rem;
+                          border-radius: var(--radius-default);
+                        "
+                        >IndentationError</code
+                      >
+                      acontece quando você esquece os 4 espaços obrigatórios ou
+                      mistura espaços com tabulações.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section 4: Próximos Passos -->
+              <section
+                id="proximos-passos"
+                class="reveal-section hidden-reveal"
+                style="
+                  padding-top: 2rem;
+                  border-top: 1px solid var(--color-outline-variant);
+                "
+              >
+                <h2 class="font-headline-md">Próximos Passos</h2>
+                <div class="next-steps-grid">
+                  <a class="next-step-card" href="vars.html">
+                    <div>
+                      <span class="card-module">Módulo 01</span>
+                      <h3 class="card-title font-headline-md">Variáveis</h3>
+                    </div>
+                    <div class="card-footer">
+                      <span class="font-caption">Explorar agora</span>
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 14px"
+                        >arrow_forward</span
+                      >
+                    </div>
+                  </a>
+
+                  <a class="next-step-card" href="data-types.html">
+                    <div>
+                      <span class="card-module">Módulo 02</span>
+                      <h3 class="card-title font-headline-md">
+                        Tipos de Dados
+                      </h3>
+                    </div>
+                    <div class="card-footer">
+                      <span class="font-caption">Explorar agora</span>
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 14px"
+                        >arrow_forward</span
+                      >
+                    </div>
+                  </a>
+
+                  <a class="next-step-card" href="operators.html">
+                    <div>
+                      <span class="card-module">Módulo 03</span>
+                      <h3 class="card-title font-headline-md">Operadores</h3>
+                    </div>
+                    <div class="card-footer">
+                      <span class="font-caption">Explorar agora</span>
+                      <span
+                        class="material-symbols-outlined"
+                        style="font-size: 14px"
+                        >arrow_forward</span
+                      >
+                    </div>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </article>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo font-headline-sm">PyChristus</span>
+            <p class="footer-copy font-body-sm">
+              © 2024 PyChristus Educational. Reductive Minimalism applied.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a class="footer-link font-body-sm" href="#">Privacidade</a>
+            <a class="footer-link font-body-sm" href="#">Termos</a>
+            <a class="footer-link font-body-sm" href="#">Contato</a>
+            <a class="footer-link font-body-sm" href="#">GitHub</a>
+          </div>
+        </footer>
+      </main>
+
+      <!-- TOC Sidebar -->
+      <aside class="toc-sidebar">
+        <h4 class="toc-title font-label-md">Nesta Página</h4>
+        <nav class="toc-nav">
+          <a class="toc-link active font-body-sm" href="#o-que-sao-fundamentos"
+            >Fundamentos?</a
+          >
+          <a class="toc-link font-body-sm" href="#comentarios-em-python"
+            >Comentários</a
+          >
+          <a class="toc-link font-body-sm" href="#indentacao">Indentação</a>
+          <a class="toc-link font-body-sm" href="#proximos-passos"
+            >Próximos Passos</a
+          >
+        </nav>
+      </aside>
+    </div>
+
+    <!-- Help FAB -->
+    <button class="fab-help">
+      <span class="material-symbols-outlined">help_outline</span>
+    </button>
+
+    <script>
+      // Simple scroll reveal for sections using pure CSS classes
+      const observerOptions = {
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".reveal-section").forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

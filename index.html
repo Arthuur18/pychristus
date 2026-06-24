@@ -1,0 +1,243 @@
+<!doctype html>
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Introdução ao Python | PyChristus</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- TopNavBar -->
+    <header class="top-bar">
+      <div class="brand-container">
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo light-logo"
+          src="assets/imgs/logo-light-theme.png"
+        />
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo dark-logo"
+          src="assets/imgs/logo-dark-theme.png"
+        />
+        <span class="brand-name font-headline-md font-bold">PyChristus</span>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link active font-headline-sm" href="#">Início</a>
+        <a class="nav-link font-headline-sm" href="#">Guia</a>
+        <a class="nav-link font-headline-sm" href="#">Exercícios</a>
+        <a class="nav-link font-headline-sm" href="#">Referência</a>
+        <a class="nav-link font-headline-sm" href="#">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="app-container">
+      <!-- SideNavBar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title font-headline-sm font-bold">Documentação</h3>
+          <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
+        </div>
+        <nav class="sidebar-menu">
+          <a class="sidebar-link active font-label-md" href="index.html">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="sidebar-link-text">Introdução</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="fundamentals.html">
+            <span class="material-symbols-outlined" data-icon="menu_book"
+              >menu_book</span
+            >
+            <span class="sidebar-link-text">Fundamentos</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="flow-control.html">
+            <span class="material-symbols-outlined" data-icon="alt_route"
+              >alt_route</span
+            >
+            <span class="sidebar-link-text">Controle de Fluxo</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="loops.html">
+            <span class="material-symbols-outlined" data-icon="loop">loop</span>
+            <span class="sidebar-link-text">Estruturas de Repetição</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="data-structures.html">
+            <span class="material-symbols-outlined" data-icon="reorder"
+              >reorder</span
+            >
+            <span class="sidebar-link-text">Estruturas de Dados</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="functions.html">
+            <span class="material-symbols-outlined" data-icon="functions"
+              >functions</span
+            >
+            <span class="sidebar-link-text">Funções</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="exercises.html">
+            <span class="material-symbols-outlined" data-icon="edit_note"
+              >edit_note</span
+            >
+            <span class="sidebar-link-text">Exercícios</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content Canvas -->
+      <main class="main-content">
+        <div class="content-container">
+          <!-- Hero Breadcrumb -->
+          <div class="breadcrumb font-label-md">
+            <span class="breadcrumb-item">Guia</span>
+            <span class="material-symbols-outlined breadcrumb-separator"
+              >chevron_right</span
+            >
+            <span class="breadcrumb-item active">Introdução</span>
+          </div>
+
+          <article class="article">
+            <!-- Title Section -->
+            <header class="article-header">
+              <h1 class="article-title font-display">O que é Python?</h1>
+              <div class="title-accent-line"></div>
+            </header>
+
+            <!-- Explanatory Text -->
+            <section class="article-section">
+              <p class="font-body-lg">
+                Python é uma linguagem de programação de alto nível,
+                interpretada, de propósito geral e extremamente versátil. Criada
+                por Guido van Rossum e lançada pela primeira vez em 1991, sua
+                filosofia de design enfatiza a legibilidade do código com o uso
+                de indentação significativa.
+              </p>
+              <p class="font-body-md">
+                A beleza do Python reside em ser <strong>simples</strong> o
+                suficiente para quem está começando, mas
+                <strong>poderosa</strong> o suficiente para alimentar sistemas
+                de inteligência artificial da NASA, servidores do Instagram e
+                processamento de dados do Google.
+              </p>
+            </section>
+
+            <!-- Admonition / Callout: Learning Tip -->
+            <div class="admonition admonition-info">
+              <span
+                class="material-symbols-outlined admonition-icon"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >lightbulb</span
+              >
+              <div class="admonition-content">
+                <p class="admonition-title font-body-md">Dica de Aprendizado</p>
+                <p class="admonition-text font-body-sm">
+                  Python é uma das linguagens mais amadas por iniciantes devido
+                  à sua sintaxe próxima da linguagem humana.
+                </p>
+              </div>
+            </div>
+
+            <!-- Admonition / Callout: Common Error -->
+            <div class="admonition admonition-danger">
+              <span
+                class="material-symbols-outlined admonition-icon"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >error</span
+              >
+              <div class="admonition-content">
+                <p class="admonition-title font-body-md">Erro Comum</p>
+                <p class="admonition-text font-body-sm">
+                  Não se esqueça de usar a indentação correta! Em Python, um
+                  espaço a mais ou a menos pode mudar completamente a lógica do
+                  seu código ou causar erros de execução.
+                </p>
+              </div>
+            </div>
+
+            <!-- Code Block -->
+            <section class="code-section">
+              <div class="code-section-header">
+                <h3 class="code-section-title font-headline-sm">
+                  <span class="material-symbols-outlined">terminal</span>
+                  Primeiro Programa
+                </h3>
+                <span class="code-file-name font-code-block font-body-sm"
+                  >hello_world.py</span
+                >
+              </div>
+              <div class="code-container font-code-block">
+                <div class="code-wrapper">
+                  <div class="code-line-numbers">1<br />2<br />3</div>
+                  <div class="code-content">
+                    <span class="python-func">print</span>(<span
+                      class="python-string"
+                      >'Olá, Mundo!'</span
+                    >) <br />
+                    <span class="python-comment"
+                      ># Isso exibe uma mensagem na tela</span
+                    ><br />
+                    <span class="python-func">input</span>(<span
+                      class="python-string"
+                      >'Pressione Enter para sair'</span
+                    >)
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+              <div class="cta-text font-body-sm">
+                Pronto para começar sua jornada?
+              </div>
+              <a class="cta-button font-label-md" href="#">
+                <span>Próximo: Instalação</span>
+                <span class="material-symbols-outlined cta-button-icon"
+                  >arrow_forward</span
+                >
+              </a>
+            </section>
+          </article>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo font-headline-sm">PyChristus</span>
+            <p class="footer-copy font-body-sm">
+              © 2024 PyChristus. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a class="footer-link font-body-sm" href="#">Privacidade</a>
+            <a class="footer-link font-body-sm" href="#">Termos</a>
+            <a class="footer-link font-body-sm" href="#">Contato</a>
+          </div>
+        </footer>
+      </main>
+
+      <!-- TOC Sidebar -->
+      <aside class="toc-sidebar">
+        <h4 class="toc-title font-label-md">Nesta Página</h4>
+        <nav class="toc-nav">
+          <a class="toc-link active font-body-sm" href="#">O que é Python?</a>
+          <a class="toc-link font-body-sm" href="#">Exemplo de Código</a>
+        </nav>
+      </aside>
+    </div>
+
+    <!-- Help FAB -->
+    <button class="fab-help">
+      <span class="material-symbols-outlined">help_outline</span>
+    </button>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html class="light" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Controle de Fluxo em Python | PyChristus</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/flow-control.css" />
+  </head>
+  <body class="page-body">
+    <!-- TopNavBar -->
+    <header class="top-bar">
+      <div class="brand-container">
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo"
+          src="assets/imgs/logo-light-theme.png"
+        />
+        <span class="brand-name font-headline-md font-bold">PyChristus</span>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link active font-headline-sm" href="#">Início</a>
+        <a class="nav-link font-headline-sm" href="#">Guia</a>
+        <a class="nav-link font-headline-sm" href="#">Exercícios</a>
+        <a class="nav-link font-headline-sm" href="#">Referência</a>
+        <a class="nav-link font-headline-sm" href="#">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+    <div class="page-layout">
+      <!-- SideNavBar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title font-headline-sm font-bold">Documentação</h3>
+          <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
+        </div>
+        <nav class="sidebar-menu">
+          <a class="sidebar-link active font-label-md" href="index.html">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="sidebar-link-text">Introdução</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="fundamentals.html">
+            <span class="material-symbols-outlined" data-icon="menu_book"
+              >menu_book</span
+            >
+            <span class="sidebar-link-text">Fundamentos</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="flow-control.html">
+            <span class="material-symbols-outlined" data-icon="alt_route"
+              >alt_route</span
+            >
+            <span class="sidebar-link-text">Controle de Fluxo</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="loops.html">
+            <span class="material-symbols-outlined" data-icon="loop">loop</span>
+            <span class="sidebar-link-text">Estruturas de Repetição</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="data-structures.html">
+            <span class="material-symbols-outlined" data-icon="reorder"
+              >reorder</span
+            >
+            <span class="sidebar-link-text">Estruturas de Dados</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="functions.html">
+            <span class="material-symbols-outlined" data-icon="functions"
+              >functions</span
+            >
+            <span class="sidebar-link-text">Funções</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="exercises.html">
+            <span class="material-symbols-outlined" data-icon="edit_note"
+              >edit_note</span
+            >
+            <span class="sidebar-link-text">Exercícios</span>
+          </a>
+        </nav>
+      </aside>
+      <!-- Main Content -->
+      <main class="doc-content">
+        <header class="mb-12">
+          <h1 class="font-headline-lg text-headline-lg mb-6">
+            Controle de Fluxo em Python
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed"
+          >
+            A tomada de decisão é o coração de qualquer programa. No Python,
+            usamos estruturas de controle de fluxo para direcionar a execução do
+            código com base em condições lógicas. Através de
+            <span class="font-bold text-on-surface">if</span>,
+            <span class="font-bold text-on-surface">elif</span> e
+            <span class="font-bold text-on-surface">else</span>, podemos criar
+            sistemas inteligentes que respondem a diferentes entradas de dados.
+          </p>
+        </header>
+        <!-- Cards Section: Bento Grid Layout -->
+        <section class="flow-cards">
+          <!-- if Card -->
+          <div class="flow-card flow-card-primary">
+            <div class="flex items-center justify-between">
+              <span class="font-headline-md text-headline-md font-bold"
+                >if</span
+              >
+              <span
+                class="material-symbols-outlined text-primary"
+                data-icon="alt_route"
+                >alt_route</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              A condição básica. Se a expressão for verdadeira, o bloco de
+              código indentado será executado.
+            </p>
+          </div>
+          <!-- elif Card -->
+          <div class="flow-card">
+            <div class="flex items-center justify-between">
+              <span class="font-headline-md text-headline-md font-bold"
+                >elif</span
+              >
+              <span
+                class="material-symbols-outlined text-on-surface-variant"
+                data-icon="add_road"
+                >add_road</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Abreviação de "else if". Permite verificar múltiplas condições em
+              sequência caso a anterior falhe.
+            </p>
+          </div>
+          <!-- else Card -->
+          <div class="flow-card">
+            <div class="flex items-center justify-between">
+              <span class="font-headline-md text-headline-md font-bold"
+                >else</span
+              >
+              <span
+                class="material-symbols-outlined text-on-surface-variant"
+                data-icon="subdirectory_arrow_right"
+                >subdirectory_arrow_right</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              A rota de fuga. Executa o código se nenhuma das condições
+              anteriores for atendida.
+            </p>
+          </div>
+        </section>
+        <!-- Code Block Example -->
+        <section class="content-section">
+          <h2
+            class="font-headline-md text-headline-md mb-6 flex items-center gap-2"
+          >
+            <span class="material-symbols-outlined">terminal</span> Exemplo
+            Prático
+          </h2>
+          <div class="code-block text-on-primary">
+            <pre><code class="language-python"><span class="python-comment"># Verificação de Nota de Estudante</span>
+nota = 85
+
+<span class="python-func">if</span> nota >= 90:
+    <span class="python-func">print</span>(<span class="python-string">"Conceito: A - Excelente!"</span>)
+<span class="python-func">elif</span> nota >= 70:
+    <span class="python-func">print</span>(<span class="python-string">"Conceito: B - Aprovado"</span>)
+<span class="python-func">elif</span> nota >= 50:
+    <span class="python-func">print</span>(<span class="python-string">"Conceito: C - Recuperação"</span>)
+<span class="python-func">else</span>:
+    <span class="python-func">print</span>(<span class="python-string">"Conceito: D - Reprovado"</span>)
+
+<span class="python-comment"># Outro exemplo: Verificação de Idade</span>
+idade = 18
+<span class="python-func">if</span> idade >= 18:
+    pode_dirigir = True
+    <span class="python-func">print</span>("Acesso autorizado")
+<span class="python-func">else</span>:
+    pode_dirigir = False
+    <span class="python-func">print</span>("Acesso negado")</code></pre>
+          </div>
+        </section>
+
+        <!-- Admonition / Callout: Common Error -->
+        <div class="admonition admonition-danger">
+          <span
+            class="material-symbols-outlined admonition-icon"
+            style="font-variation-settings: &quot;FILL&quot; 1"
+            >error</span
+          >
+          <div class="admonition-content">
+            <p class="admonition-title font-body-md">Erro Comum</p>
+            <p class="admonition-text font-body-sm">
+              Ao contrário de outras linguagens que usam chaves
+              <code>{}</code>, o Python utiliza a
+              <span class="font-bold">indentação</span> (espaços) para definir o
+              escopo do bloco. Além disso, cada declaração condicional DEVE
+              terminar com dois pontos <code>:</code>.
+            </p>
+            <p class="admonition-text font-body-sm">
+              <br />
+              <span class="text-error font-bold"># ERRADO:</span><br />
+              if x > 0<br />
+              print(x)
+              <span class="text-on-error-container/60"
+                ># Erro de sintaxe e indentação</span
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Footer links inside Main for documentation style -->
+      </main>
+      <!-- Right TOC or Secondary Nav (Optional for High-Fidelity) -->
+      <aside class="page-toc">
+        <div class="sticky top-24">
+          <h4
+            class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant mb-4"
+          >
+            Nesta Página
+          </h4>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <a
+                class="font-caption text-caption text-primary font-bold border-l-2 border-primary pl-3"
+                href="#"
+                >Introdução</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-caption text-caption text-on-surface-variant hover:text-primary pl-3 transition-colors"
+                href="#"
+                >Estruturas if/elif/else</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-caption text-caption text-on-surface-variant hover:text-primary pl-3 transition-colors"
+                href="#"
+                >Código de Exemplo</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-caption text-caption text-on-surface-variant hover:text-primary pl-3 transition-colors"
+                href="#"
+                >Erros Comuns</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-caption text-caption text-on-surface-variant hover:text-primary pl-3 transition-colors"
+                href="#"
+                >Exercícios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!-- Micro-interaction script -->
+    <script>
+      // Simple code block copy logic or hover effects
+      document.querySelectorAll(".code-block").forEach((block) => {
+        block.addEventListener("mouseenter", () => {
+          block.style.border = "1px solid #ffffff";
+          block.style.transition = "border 0.3s ease";
+        });
+        block.addEventListener("mouseleave", () => {
+          block.style.border = "1px solid transparent";
+        });
+      });
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
