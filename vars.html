@@ -1,0 +1,241 @@
+<!doctype html>
+
+<html class="light" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Variáveis em Python | PyChristus</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/vars.css" />
+  </head>
+  <body
+    class="bg-background text-on-surface font-body-md selection:bg-primary selection:text-white"
+  >
+    <!-- TopNavBar -->
+    <header class="top-bar">
+      <div class="brand-container">
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo"
+          src="assets/imgs/logo-light-theme.png"
+        />
+        <span class="brand-name font-headline-md font-bold">PyChristus</span>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link active font-headline-sm" href="#">Início</a>
+        <a class="nav-link font-headline-sm" href="#">Guia</a>
+        <a class="nav-link font-headline-sm" href="#">Exercícios</a>
+        <a class="nav-link font-headline-sm" href="#">Referência</a>
+        <a class="nav-link font-headline-sm" href="#">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+    <!-- Main Layout Container -->
+    <div class="app-container">
+      <!-- SideNavBar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title font-headline-sm font-bold">Documentação</h3>
+          <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
+        </div>
+        <nav class="sidebar-menu">
+          <a class="sidebar-link font-label-md" href="index.html">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="sidebar-link-text">Introdução</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="fundamentals.html">
+            <span class="material-symbols-outlined" data-icon="menu_book"
+              >menu_book</span
+            >
+            <span class="sidebar-link-text">Fundamentos</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="flow-control.html">
+            <span class="material-symbols-outlined" data-icon="alt_route"
+              >alt_route</span
+            >
+            <span class="sidebar-link-text">Controle de Fluxo</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="loops.html">
+            <span class="material-symbols-outlined" data-icon="loop">loop</span>
+            <span class="sidebar-link-text">Estruturas de Repetição</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="data-structures.html">
+            <span class="material-symbols-outlined" data-icon="reorder"
+              >reorder</span
+            >
+            <span class="sidebar-link-text">Estruturas de Dados</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="functions.html">
+            <span class="material-symbols-outlined" data-icon="functions"
+              >functions</span
+            >
+            <span class="sidebar-link-text">Funções</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="exercises.html">
+            <span class="material-symbols-outlined" data-icon="edit_note"
+              >edit_note</span
+            >
+            <span class="sidebar-link-text">Exercícios</span>
+          </a>
+        </nav>
+      </aside>
+      <!-- Main Content Canvas -->
+      <main class="main-content">
+        <div class="content-container">
+          <!-- Breadcrumbs -->
+          <nav class="breadcrumb font-body-sm">
+            <a class="breadcrumb-item" href="#">Documentação</a>
+            <span class="material-symbols-outlined breadcrumb-separator">chevron_right</span>
+            <a class="breadcrumb-item" href="#">Fundamentos</a>
+            <span class="material-symbols-outlined breadcrumb-separator">chevron_right</span>
+            <span class="breadcrumb-item active">Variáveis em Python</span>
+          </nav>
+          <!-- Page Header -->
+          <header class="article-header">
+            <h1 class="article-title font-display">Variáveis em Python</h1>
+            <div class="title-accent-line"></div>
+            <p class="font-body-lg">
+              Imagine as variáveis como etiquetas presas a caixas de memória. Em
+              Python, uma variável é criada no momento em que você atribui um
+              valor a ela pela primeira vez. Não é necessário declarar o tipo
+              explicitamente; o Python é inteligente o suficiente para entender
+              o que você está guardando.
+            </p>
+          </header>
+          <!-- Code Section -->
+          <section class="code-block-container">
+            <div class="code-block-header">
+              <span class="code-block-lang">python</span>
+              <button class="code-block-copy-btn" onclick="copyCode()">
+                <span class="material-symbols-outlined">content_copy</span>
+                Copiar
+              </button>
+            </div>
+            <div class="code-block-body">
+              <div class="code-line">
+                <span class="code-line-num">1</span>
+                <div class="code-line-content">
+                  <span style="color: #7dd3fc;">nome</span>
+                  <span style="color: #94a3b8;">=</span>
+                  <span style="color: #fdba74;">'Maria'</span>
+                  <span style="color: #4ade80; opacity: 0.7;"># Criando uma variável de texto</span>
+                </div>
+              </div>
+              <div class="code-line">
+                <span class="code-line-num">2</span>
+                <div class="code-line-content">
+                  <span style="color: #7dd3fc;">idade</span>
+                  <span style="color: #94a3b8;">=</span>
+                  <span style="color: #fdba74;">18</span>
+                  <span style="color: #4ade80; opacity: 0.7;"># Criando uma variável numérica</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Explanation List -->
+          <section class="explanation-list">
+            <h3 class="font-headline-sm">Entendendo o Código</h3>
+            <div class="explanation-card">
+              <div class="explanation-card-num">1</div>
+              <p class="explanation-card-text">
+                Na primeira linha, definimos <code>nome</code>. Como o valor
+                está entre aspas, o Python entende que é uma
+                <b>String</b> (texto).
+              </p>
+            </div>
+            <div class="explanation-card">
+              <div class="explanation-card-num">2</div>
+              <p class="explanation-card-text">
+                Na segunda linha, definimos <code>idade</code>. Como o valor é
+                um número puro, o Python o classifica como um
+                <b>Integer</b> (inteiro).
+              </p>
+            </div>
+          </section>
+          <!-- Admonition / Callout -->
+          <section class="admonition admonition-danger" style="margin-top: 0; margin-bottom: 2.5rem;">
+            <span class="material-symbols-outlined admonition-icon">warning</span>
+            <div class="admonition-content">
+              <h4 class="admonition-title">Erro comum</h4>
+              <p class="admonition-text">
+                Não comece nomes de variáveis com números (ex:
+                <code>1usuario</code>). Use letras, números ou sublinhados,
+                mas sempre inicie com uma letra ou <code>_</code>.
+              </p>
+            </div>
+          </section>
+          <!-- Practice Exercise -->
+          <section class="exercise-card">
+            <div class="exercise-card-header">
+              <span class="material-symbols-outlined exercise-card-icon">exercise</span>
+              <h3 class="exercise-card-title">Exercício Prático</h3>
+            </div>
+            <p class="exercise-card-desc">
+              Crie um programa que solicite o nome do usuário e exiba uma
+              mensagem de boas-vindas personalizada. Use a função
+              <code>input()</code> para receber o dado e o
+              <code>print()</code> para mostrar o resultado.
+            </p>
+            <div class="exercise-card-actions">
+              <button class="btn btn-primary">Ver Solução</button>
+              <button class="btn btn-outline">Tentar no Playground</button>
+            </div>
+          </section>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-brand">
+            <span class="footer-logo font-headline-sm">PyChristus</span>
+            <p class="footer-copy font-body-sm">
+              © 2024 PyChristus. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a class="footer-link font-body-sm" href="#">Privacidade</a>
+            <a class="footer-link font-body-sm" href="#">Termos</a>
+            <a class="footer-link font-body-sm" href="#">Contato</a>
+          </div>
+        </footer>
+      </main>
+      <!-- TOC Sidebar -->
+      <aside class="toc-sidebar">
+        <h4 class="toc-title font-label-md">Nesta Página</h4>
+        <nav class="toc-nav">
+          <a class="toc-link active font-body-sm" href="#">O que são variáveis?</a>
+          <a class="toc-link font-body-sm" href="#">Exemplo de Código</a>
+          <a class="toc-link font-body-sm" href="#">Regras de Nomenclatura</a>
+          <a class="toc-link font-body-sm" href="#">Exercício</a>
+        </nav>
+      </aside>
+    </div>
+    <script>
+      function copyCode() {
+        const code = `nome = 'Maria' # Criando uma variável de texto\nidade = 18      # Criando uma variável numérica`;
+        navigator.clipboard.writeText(code).then(() => {
+          alert("Código copiado para a área de transferência!");
+        });
+      }
+
+      // Global search shortcut ⌘K or Ctrl+K
+      document.addEventListener("keydown", (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+          e.preventDefault();
+          document.querySelector('input[type="text"]').focus();
+        }
+      });
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+/* Data Types Page-specific Styles */
+
+/* Grid layout for types */
+.types-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .types-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Individual Type Card */
+.types-card {
+  background-color: var(--color-surface-container-lowest);
+  border: 1px solid var(--color-primary);
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.types-card:hover {
+  background-color: var(--color-surface);
+  transform: translateY(-2px);
+}
+
+.types-card-icon-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.types-card-icon-wrapper .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.types-card-title {
+  color: var(--color-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.types-card-desc {
+  font-family: var(--font-family-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.types-card-example {
+  background-color: var(--color-surface-container-low);
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-outline-variant);
+  transition: border-color 0.2s;
+}
+
+.types-card:hover .types-card-example {
+  border-color: var(--color-primary);
+}
+
+.types-card-example code {
+  font-family: var(--font-family-code);
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+/* Comprehensive Practical Example */
+.practical-example {
+  margin-bottom: 3rem;
+}
+
+.practical-example-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-surface-container-high);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-family-display);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--color-on-surface);
+}
+
+.copy-btn:hover {
+  background-color: var(--color-surface-dim);
+}
+
+.code-container-dark {
+  background-color: #0f172a;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-primary);
+  overflow-x: auto;
+}
+
+.code-container-dark pre {
+  margin: 0;
+  font-family: var(--font-family-code);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f8f2;
+}
+
+.code-container-dark .comment {
+  color: rgb(34, 197, 94);
+  font-style: italic;
+}
+
+.code-container-dark .string {
+  color: rgb(249, 115, 22);
+}
+
+.code-container-dark .keyword {
+  color: rgb(96, 165, 250);
+  font-weight: bold;
+}
+
+/* Call to Action layout */
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .cta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cta-card {
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--color-primary);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-card-content {
+  position: relative;
+  z-index: 10;
+}
+
+.cta-card-title {
+  color: var(--color-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.cta-card-desc {
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-family-display);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+.cta-card-bg-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  opacity: 0.05;
+  pointer-events: none;
+  transition: transform 0.7s ease;
+}
+
+.cta-card:hover .cta-card-bg-icon {
+  transform: rotate(12deg);
+}
+
+.cta-card-bg-icon span {
+  font-size: 120px;
+}
+
+.cta-dashed-card {
+  border: 2px dashed var(--color-primary);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-dashed-card-icon {
+  font-size: 40px !important;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.cta-dashed-card-title {
+  color: var(--color-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.cta-dashed-card-desc {
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.btn-outline {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-family-display);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}

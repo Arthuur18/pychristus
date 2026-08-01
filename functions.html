@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html class="light" lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/functions.css" />
+  </head>
+  <body class="bg-surface text-on-surface">
+    <!-- TopNavBar -->
+    <header class="top-bar">
+      <div class="brand-container">
+        <img
+          alt="PyChristus Logo"
+          class="brand-logo"
+          src="assets/imgs/logo-light-theme.png"
+        />
+        <span class="brand-name font-headline-md font-bold">PyChristus</span>
+      </div>
+      <nav class="nav-menu">
+        <a class="nav-link active font-headline-sm" href="#">Início</a>
+        <a class="nav-link font-headline-sm" href="#">Guia</a>
+        <a class="nav-link font-headline-sm" href="#">Exercícios</a>
+        <a class="nav-link font-headline-sm" href="#">Referência</a>
+        <a class="nav-link font-headline-sm" href="#">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </header>
+    <!-- Main Layout Container -->
+    <div class="app-container">
+      <!-- SideNavBar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title font-headline-sm font-bold">Documentação</h3>
+          <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
+        </div>
+        <nav class="sidebar-menu">
+          <a class="sidebar-link font-label-md" href="index.html">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="sidebar-link-text">Introdução</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="fundamentals.html">
+            <span class="material-symbols-outlined" data-icon="menu_book"
+              >menu_book</span
+            >
+            <span class="sidebar-link-text">Fundamentos</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="flow-control.html">
+            <span class="material-symbols-outlined" data-icon="alt_route"
+              >alt_route</span
+            >
+            <span class="sidebar-link-text">Controle de Fluxo</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="loops.html">
+            <span class="material-symbols-outlined" data-icon="loop">loop</span>
+            <span class="sidebar-link-text">Estruturas de Repetição</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="data-structures.html">
+            <span class="material-symbols-outlined" data-icon="reorder"
+              >reorder</span
+            >
+            <span class="sidebar-link-text">Estruturas de Dados</span>
+          </a>
+          <a class="sidebar-link active font-label-md" href="functions.html">
+            <span class="material-symbols-outlined" data-icon="functions"
+              >functions</span
+            >
+            <span class="sidebar-link-text">Funções</span>
+          </a>
+          <a class="sidebar-link font-label-md" href="exercises.html">
+            <span class="material-symbols-outlined" data-icon="edit_note"
+              >edit_note</span
+            >
+            <span class="sidebar-link-text">Exercícios</span>
+          </a>
+        </nav>
+      </aside>
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="content-container">
+          <!-- Hero Section -->
+          <header class="article-header">
+            <nav class="breadcrumb font-body-sm">
+              <a class="breadcrumb-item" href="#">Documentação</a>
+              <span class="material-symbols-outlined breadcrumb-separator"
+                >chevron_right</span
+              >
+              <span class="breadcrumb-item active">Funções</span>
+            </nav>
+            <h1 class="article-title font-display">Funções em Python</h1>
+            <div class="title-accent-line"></div>
+            <p class="font-body-lg">
+              Funções são blocos de código reutilizáveis que realizam uma tarefa
+              específica. Elas ajudam a organizar o programa, evitar repetição e
+              tornar o código mais modular e fácil de manter.
+            </p>
+          </header>
+          <!-- Concept Bento Grid -->
+          <section class="concept-grid">
+            <div class="concept-card">
+              <div class="concept-card-icon-wrapper">
+                <span class="material-symbols-outlined">code</span>
+              </div>
+              <h3 class="concept-card-title font-headline-sm font-bold">
+                Definição (def)
+              </h3>
+              <p class="concept-card-desc">
+                Usamos a palavra-chave
+                <code
+                  style="
+                    background-color: var(--color-surface-container);
+                    padding: 0.125rem 0.25rem;
+                    border-radius: var(--radius-default);
+                    color: var(--color-primary);
+                  "
+                  >def</code
+                >
+                seguida pelo nome da função e parênteses para declarar novos
+                comportamentos.
+              </p>
+            </div>
+            <div class="concept-card">
+              <div class="concept-card-icon-wrapper">
+                <span class="material-symbols-outlined">input</span>
+              </div>
+              <h3 class="concept-card-title font-headline-sm font-bold">
+                Parâmetros
+              </h3>
+              <p class="concept-card-desc">
+                São valores que a função pode receber como entrada para
+                processar. Eles agem como variáveis locais dentro do escopo.
+              </p>
+            </div>
+            <div class="concept-card">
+              <div class="concept-card-icon-wrapper">
+                <span class="material-symbols-outlined">output</span>
+              </div>
+              <h3 class="concept-card-title font-headline-sm font-bold">
+                Retorno (return)
+              </h3>
+              <p class="concept-card-desc">
+                Define como a função envia um resultado de volta para quem a
+                chamou, permitindo que o dado seja armazenado em variáveis.
+              </p>
+            </div>
+          </section>
+          <!-- Code Example -->
+          <section class="practical-example">
+            <div class="practical-example-header">
+              <h2 class="font-headline-md font-bold" style="margin: 0">
+                Exemplo Prático
+              </h2>
+              <span class="font-code-block">python</span>
+            </div>
+            <div class="code-window">
+              <div class="code-window-header">
+                <div class="code-window-dots">
+                  <div class="code-window-dot red"></div>
+                  <div class="code-window-dot yellow"></div>
+                  <div class="code-window-dot green"></div>
+                </div>
+                <button class="code-window-copy-btn" onclick="copyCode(event)">
+                  <span class="material-symbols-outlined text-sm"
+                    >content_copy</span
+                  >
+                  <span>Copy</span>
+                </button>
+              </div>
+              <pre
+                class="code-window-pre"
+              ><code><span class="comment"># Definindo uma função simples</span>
+<span class="keyword">def</span> <span class="string">saudar</span>(nome):
+    <span class="keyword">return</span> <span class="string">f"Olá, {nome}! Bem-vindo ao PyChristus."</span>
+
+<span class="comment"># Chamando a função</span>
+mensagem = <span class="string">saudar</span>(<span class="string">"Estudante"</span>)
+<span class="keyword">print</span>(mensagem)</code></pre>
+            </div>
+          </section>
+          <!-- Common Error Admonition -->
+          <section
+            class="admonition admonition-danger"
+            style="margin-top: 0; margin-bottom: 4rem"
+          >
+            <span class="material-symbols-outlined admonition-icon">error</span>
+            <div class="admonition-content">
+              <h3 class="admonition-title">
+                Esquecer o Parêntese ou Indentação
+              </h3>
+              <p class="admonition-text font-body-md">
+                Um erro muito comum é esquecer os parênteses na definição ou
+                chamada da função, ou não indentar corretamente o bloco de
+                código dentro da função. Em Python, a indentação é o que define
+                o corpo da função.
+              </p>
+            </div>
+          </section>
+          <!-- Next Steps / Final Section -->
+          <section class="next-level-card">
+            <div class="next-level-card-pattern"></div>
+            <div class="next-level-card-content">
+              <h2 class="next-level-card-title font-headline-lg font-bold">
+                Pronto para o próximo nível?
+              </h2>
+              <p class="next-level-card-desc">
+                Agora que você domina funções, vamos aprender sobre Escopo de
+                Variáveis ou avançar para Módulos. Continue sua jornada
+                acadêmica em Python.
+              </p>
+              <div class="next-level-card-actions">
+                <button class="btn-pill btn-pill-light">Explorar Escopo</button>
+                <button class="btn-pill btn-pill-outline">Ver Módulos</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- TOC Sidebar -->
+      <aside class="toc-sidebar">
+        <h4 class="toc-title font-label-md">Nesta página</h4>
+        <nav class="toc-nav">
+          <a class="toc-link active font-body-sm" href="#">Introdução</a>
+          <a class="toc-link font-body-sm" href="#">Conceitos Básicos</a>
+          <a class="toc-link font-body-sm" href="#">Exemplo Prático</a>
+          <a class="toc-link font-body-sm" href="#">Erros Comuns</a>
+          <a class="toc-link font-body-sm" href="#">Próximos Passos</a>
+        </nav>
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-brand">
+        <span class="footer-logo font-headline-sm">PyChristus</span>
+        <p class="footer-copy font-body-sm">
+          © 2024 PyChristus. Todos os direitos reservados.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link font-body-sm" href="#">Privacidade</a>
+        <a class="footer-link font-body-sm" href="#">Termos</a>
+        <a class="footer-link font-body-sm" href="#">Contato</a>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

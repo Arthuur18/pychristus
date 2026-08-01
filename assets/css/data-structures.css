@@ -1,0 +1,160 @@
+/* Data Structures Page-specific Styles */
+
+/* Bento Grid Layout */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Bento Card Component */
+.bento-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s ease-out;
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+}
+
+.bento-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bento-card-icon {
+  color: var(--color-primary);
+  font-size: 1.875rem !important;
+}
+
+.bento-card-title {
+  margin: 0;
+}
+
+.bento-card-text {
+  margin: 0;
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--color-on-surface);
+}
+
+.bento-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-family: var(--font-family-display);
+  font-size: 12px;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+/* Code Syntax Card Component */
+.practical-example {
+  margin-bottom: 3rem;
+}
+
+.practical-example-title {
+  margin-bottom: 1.5rem;
+}
+
+.code-card {
+  background-color: #0f172a;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-primary);
+  position: relative;
+  overflow-x: auto;
+}
+
+.code-card-lang {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: #848484;
+  opacity: 0.5;
+  font-family: var(--font-family-display);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.code-syntax {
+  margin: 0;
+  font-family: var(--font-family-code);
+  font-size: 14px;
+  line-height: 1.625;
+  color: #f8f8f2;
+}
+
+.comment {
+  color: rgb(34, 197, 94);
+  font-style: italic;
+}
+
+.string {
+  color: rgb(249, 115, 22);
+}
+
+.keyword {
+  color: rgb(96, 165, 250);
+  font-weight: bold;
+}
+
+/* Visual Decorative Card Component */
+.decorative-card {
+  height: 16rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-outline);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, var(--color-surface-container) 0%, var(--color-surface-container-high) 100%);
+}
+
+.decorative-card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decorative-card-btn {
+  font-family: var(--font-family-display);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius-full);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.decorative-card:hover .decorative-card-btn {
+  transform: scale(1.05);
+}
