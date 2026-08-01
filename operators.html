@@ -1,11 +1,9 @@
 <!doctype html>
-
 <html class="light" lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Operadores em Python | PyChristus</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
@@ -15,175 +13,13 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-secondary-fixed-variant": "#454747",
-              "inverse-primary": "#c6c6c6",
-              "surface-variant": "#e2e2e2",
-              "secondary-fixed": "#e2e2e2",
-              "on-secondary-fixed": "#1a1c1c",
-              background: "#f9f9f9",
-              "on-background": "#1a1c1c",
-              "error-container": "#ffdad6",
-              "surface-bright": "#f9f9f9",
-              "on-primary": "#ffffff",
-              "surface-container-high": "#e8e8e8",
-              "on-tertiary-fixed-variant": "#474747",
-              error: "#ba1a1a",
-              "outline-variant": "#cfc4c5",
-              "tertiary-fixed-dim": "#c6c6c6",
-              "primary-container": "#1b1b1b",
-              "surface-dim": "#dadada",
-              "surface-container-highest": "#e2e2e2",
-              surface: "#f9f9f9",
-              secondary: "#5d5f5f",
-              "on-tertiary-fixed": "#1b1b1b",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed": "#1b1b1b",
-              "surface-container": "#eeeeee",
-              "on-error-container": "#93000a",
-              "on-surface-variant": "#4c4546",
-              tertiary: "#000000",
-              "inverse-surface": "#2f3131",
-              "surface-container-lowest": "#ffffff",
-              outline: "#7e7576",
-              "on-surface": "#1a1c1c",
-              "primary-fixed-dim": "#c6c6c6",
-              "surface-tint": "#5e5e5e",
-              "primary-fixed": "#e2e2e2",
-              "on-secondary": "#ffffff",
-              "surface-container-low": "#f3f3f3",
-              "tertiary-fixed": "#e2e2e2",
-              "on-secondary-container": "#616363",
-              "on-primary-container": "#848484",
-              primary: "#000000",
-              "on-tertiary-container": "#848484",
-              "secondary-container": "#dfe0e0",
-              "tertiary-container": "#1b1b1b",
-              "on-primary-fixed-variant": "#474747",
-              "on-error": "#ffffff",
-              "secondary-fixed-dim": "#c6c6c7",
-              "inverse-on-surface": "#f1f1f1",
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-            spacing: {
-              unit: "4px",
-              gutter: "24px",
-              "container-max": "1200px",
-              margin: "32px",
-            },
-            fontFamily: {
-              "headline-lg": ["Geist"],
-              "body-md": ["Geist"],
-              caption: ["Geist"],
-              "label-md": ["Geist"],
-              "headline-md": ["Geist"],
-              "headline-lg-mobile": ["Geist"],
-              "body-lg": ["Geist"],
-            },
-            fontSize: {
-              "headline-lg": [
-                "48px",
-                {
-                  lineHeight: "1.1",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "600",
-                },
-              ],
-              "body-md": [
-                "16px",
-                { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" },
-              ],
-              caption: [
-                "12px",
-                { lineHeight: "1.4", letterSpacing: "0", fontWeight: "400" },
-              ],
-              "label-md": [
-                "14px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "0.05em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-md": [
-                "24px",
-                {
-                  lineHeight: "1.3",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "500",
-                },
-              ],
-              "headline-lg-mobile": [
-                "32px",
-                {
-                  lineHeight: "1.2",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "600",
-                },
-              ],
-              "body-lg": [
-                "18px",
-                { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" },
-              ],
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-        vertical-align: middle;
-      }
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cfc4c5;
-        border-radius: 3px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #7e7576;
-      }
-
-      .code-block {
-        font-family: "JetBrains Mono", monospace;
-        background: #1b1b1b;
-        border-radius: 0.75rem;
-        padding: 1.5rem;
-        color: #e2e2e2;
-        overflow-x: auto;
-      }
-    </style>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/operators.css" />
   </head>
-  <body
-    class="bg-background text-on-background font-body-md selection:bg-primary selection:text-on-primary"
-  >
+  <body>
     <!-- TopNavBar -->
     <header class="top-bar">
       <div class="brand-container">
@@ -195,9 +31,9 @@
         <span class="brand-name font-headline-md font-bold">PyChristus</span>
       </div>
       <nav class="nav-menu">
-        <a class="nav-link active font-headline-sm" href="#">Início</a>
+        <a class="nav-link active font-headline-sm" href="index.html">Início</a>
         <a class="nav-link font-headline-sm" href="#">Guia</a>
-        <a class="nav-link font-headline-sm" href="#">Exercícios</a>
+        <a class="nav-link font-headline-sm" href="exercises.html">Exercícios</a>
         <a class="nav-link font-headline-sm" href="#">Referência</a>
         <a class="nav-link font-headline-sm" href="#">Sobre</a>
       </nav>
@@ -210,7 +46,8 @@
         </button>
       </div>
     </header>
-    <div class="flex max-w-container-max mx-auto min-h-screen">
+
+    <div class="app-container">
       <!-- SideNavBar -->
       <aside class="sidebar">
         <div class="sidebar-header">
@@ -218,20 +55,20 @@
           <p class="sidebar-subtitle font-label-md">Guia do Iniciante</p>
         </div>
         <nav class="sidebar-menu">
-          <a class="sidebar-link active font-label-md" href="index.html">
+          <a class="sidebar-link font-label-md" href="index.html">
             <span class="material-symbols-outlined" data-icon="info">info</span>
             <span class="sidebar-link-text">Introdução</span>
           </a>
           <a class="sidebar-link font-label-md" href="fundamentals.html">
-            <span class="material-symbols-outlined" data-icon="menu_book"
-              >menu_book</span
-            >
+            <span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
             <span class="sidebar-link-text">Fundamentos</span>
           </a>
+          <a class="sidebar-link active font-label-md" href="operators.html">
+            <span class="material-symbols-outlined" data-icon="functions">functions</span>
+            <span class="sidebar-link-text">Operadores</span>
+          </a>
           <a class="sidebar-link font-label-md" href="flow-control.html">
-            <span class="material-symbols-outlined" data-icon="alt_route"
-              >alt_route</span
-            >
+            <span class="material-symbols-outlined" data-icon="alt_route">alt_route</span>
             <span class="sidebar-link-text">Controle de Fluxo</span>
           </a>
           <a class="sidebar-link font-label-md" href="loops.html">
@@ -239,178 +76,121 @@
             <span class="sidebar-link-text">Estruturas de Repetição</span>
           </a>
           <a class="sidebar-link font-label-md" href="data-structures.html">
-            <span class="material-symbols-outlined" data-icon="reorder"
-              >reorder</span
-            >
+            <span class="material-symbols-outlined" data-icon="reorder">reorder</span>
             <span class="sidebar-link-text">Estruturas de Dados</span>
           </a>
           <a class="sidebar-link font-label-md" href="functions.html">
-            <span class="material-symbols-outlined" data-icon="functions"
-              >functions</span
-            >
+            <span class="material-symbols-outlined" data-icon="functions">functions</span>
             <span class="sidebar-link-text">Funções</span>
           </a>
           <a class="sidebar-link font-label-md" href="exercises.html">
-            <span class="material-symbols-outlined" data-icon="edit_note"
-              >edit_note</span
-            >
+            <span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
             <span class="sidebar-link-text">Exercícios</span>
           </a>
         </nav>
       </aside>
+
       <!-- Main Content -->
-      <main class="flex-1 p-gutter max-w-3xl">
-        <!-- Header -->
-        <header class="mb-12">
-          <h1 class="font-headline-lg text-headline-lg text-primary mb-4">
-            Operadores em Python
-          </h1>
-          <p class="font-body-lg text-body-lg text-secondary leading-relaxed">
-            Operadores são símbolos especiais em Python que realizam operações
-            em variáveis e valores. Eles são os blocos de construção
-            fundamentais para manipular dados, realizar cálculos matemáticos e
-            construir lógica de decisão em seus programas.
-          </p>
-        </header>
-        <!-- Operator Categories -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <!-- Arithmetic -->
-          <div
-            class="bg-surface-container-lowest border border-primary p-6 rounded-xl transition-all hover:translate-y-[-4px]"
-          >
-            <h2
-              class="font-headline-md text-primary mb-4 flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined">functions</span>
-              Aritméticos
-            </h2>
-            <ul class="space-y-3 font-body-md text-on-surface-variant">
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Adição <code class="bg-surface-container px-1">+</code></span
-                >
-                <span class="font-mono text-secondary">5 + 2 = 7</span>
-              </li>
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Multiplicação
-                  <code class="bg-surface-container px-1">*</code></span
-                >
-                <span class="font-mono text-secondary">5 * 2 = 10</span>
-              </li>
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Exponenciação
-                  <code class="bg-surface-container px-1">**</code></span
-                >
-                <span class="font-mono text-secondary">5 ** 2 = 25</span>
-              </li>
-              <li class="flex justify-between items-center pb-2">
-                <span
-                  >Divisão Inteira
-                  <code class="bg-surface-container px-1">//</code></span
-                >
-                <span class="font-mono text-secondary">5 // 2 = 2</span>
-              </li>
-            </ul>
-          </div>
-          <!-- Comparison -->
-          <div
-            class="bg-surface-container-lowest border border-primary p-6 rounded-xl transition-all hover:translate-y-[-4px]"
-          >
-            <h2
-              class="font-headline-md text-primary mb-4 flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined">compare_arrows</span>
-              Comparação
-            </h2>
-            <ul class="space-y-3 font-body-md text-on-surface-variant">
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Igualdade
-                  <code class="bg-surface-container px-1">==</code></span
-                >
-                <span class="font-mono text-secondary">True/False</span>
-              </li>
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Diferente
-                  <code class="bg-surface-container px-1">!=</code></span
-                >
-                <span class="font-mono text-secondary">a != b</span>
-              </li>
-              <li
-                class="flex justify-between items-center border-b border-outline-variant pb-2"
-              >
-                <span
-                  >Maior que
-                  <code class="bg-surface-container px-1">></code></span
-                >
-                <span class="font-mono text-secondary">10 > 5</span>
-              </li>
-              <li class="flex justify-between items-center pb-2">
-                <span
-                  >Menor ou igual
-                  <code class="bg-surface-container px-1"><=</code></span
-                >
-                <span class="font-mono text-secondary">x <= y</span>
-              </li>
-            </ul>
-          </div>
-          <!-- Logical (Full Width) -->
-          <div
-            class="md:col-span-2 bg-surface-container-lowest border border-primary p-6 rounded-xl"
-          >
-            <h2
-              class="font-headline-md text-primary mb-4 flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined">alt_route</span>
-              Lógicos
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-body-md">
-              <div
-                class="p-3 bg-surface-container rounded-lg border border-outline-variant"
-              >
-                <code class="font-bold text-primary">and</code>
-                <p class="text-caption mt-1">Verdadeiro se ambos forem True.</p>
-              </div>
-              <div
-                class="p-3 bg-surface-container rounded-lg border border-outline-variant"
-              >
-                <code class="font-bold text-primary">or</code>
-                <p class="text-caption mt-1">Verdadeiro se um for True.</p>
-              </div>
-              <div
-                class="p-3 bg-surface-container rounded-lg border border-outline-variant"
-              >
-                <code class="font-bold text-primary">not</code>
-                <p class="text-caption mt-1">Inverte o valor lógico.</p>
+      <main class="main-content">
+        <div class="content-container">
+          <!-- Header -->
+          <header class="operators-header">
+            <h1 class="font-headline-lg operators-title">
+              Operadores em Python
+            </h1>
+            <p class="font-body-lg operators-description">
+              Operadores são símbolos especiais em Python que realizam operações
+              em variáveis e valores. Eles são os blocos de construção
+              fundamentais para manipular dados, realizar cálculos matemáticos e
+              construir lógica de decisão em seus programas.
+            </p>
+          </header>
+
+          <!-- Operator Categories -->
+          <section class="operators-grid">
+            <!-- Arithmetic -->
+            <div class="operator-card">
+              <h2 class="operator-card-title font-headline-md">
+                <span class="material-symbols-outlined">functions</span>
+                Aritméticos
+              </h2>
+              <ul class="operator-list font-body-md">
+                <li class="operator-item">
+                  <span>Adição <code class="code-inline">+</code></span>
+                  <span class="operator-example">5 + 2 = 7</span>
+                </li>
+                <li class="operator-item">
+                  <span>Multiplicação <code class="code-inline">*</code></span>
+                  <span class="operator-example">5 * 2 = 10</span>
+                </li>
+                <li class="operator-item">
+                  <span>Exponenciação <code class="code-inline">**</code></span>
+                  <span class="operator-example">5 ** 2 = 25</span>
+                </li>
+                <li class="operator-item border-none">
+                  <span>Divisão Inteira <code class="code-inline">//</code></span>
+                  <span class="operator-example">5 // 2 = 2</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Comparison -->
+            <div class="operator-card">
+              <h2 class="operator-card-title font-headline-md">
+                <span class="material-symbols-outlined">compare_arrows</span>
+                Comparação
+              </h2>
+              <ul class="operator-list font-body-md">
+                <li class="operator-item">
+                  <span>Igualdade <code class="code-inline">==</code></span>
+                  <span class="operator-example">True/False</span>
+                </li>
+                <li class="operator-item">
+                  <span>Diferente <code class="code-inline">!=</code></span>
+                  <span class="operator-example">a != b</span>
+                </li>
+                <li class="operator-item">
+                  <span>Maior que <code class="code-inline">&gt;</code></span>
+                  <span class="operator-example">10 &gt; 5</span>
+                </li>
+                <li class="operator-item border-none">
+                  <span>Menor ou igual <code class="code-inline">&lt;=</code></span>
+                  <span class="operator-example">x &lt;= y</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Logical (Full Width) -->
+            <div class="operator-card operator-card-full">
+              <h2 class="operator-card-title font-headline-md">
+                <span class="material-symbols-outlined">alt_route</span>
+                Lógicos
+              </h2>
+              <div class="logical-operators-grid">
+                <div class="logical-item">
+                  <code class="logical-code">and</code>
+                  <p class="logical-desc">Verdadeiro se ambos forem True.</p>
+                </div>
+                <div class="logical-item">
+                  <code class="logical-code">or</code>
+                  <p class="logical-desc">Verdadeiro se um for True.</p>
+                </div>
+                <div class="logical-item">
+                  <code class="logical-code">not</code>
+                  <p class="logical-desc">Inverte o valor lógico.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <!-- Code Example -->
-        <section class="mb-12">
-          <div class="flex items-center justify-between mb-4">
-            <h2 class="font-headline-md text-primary">Exemplo Prático</h2>
-            <span class="text-caption text-secondary uppercase tracking-widest"
-              >Main.py</span
-            >
-          </div>
-          <div class="relative group">
-            <pre
-              class="code-block text-[14px]"
-            ><code># Cálculo de Área e Verificação de Acesso
+          </section>
+
+          <!-- Code Example -->
+          <section class="code-example-section">
+            <div class="code-example-header">
+              <h2 class="font-headline-md code-example-title">Exemplo Prático</h2>
+              <span class="code-filename-badge">Main.py</span>
+            </div>
+            <div class="code-block-wrapper">
+              <pre class="code-block"><code class="language-python"># Cálculo de Área e Verificação de Acesso
 raio = 5
 pi = 3.14159
 area = pi * (raio ** 2)
@@ -420,143 +200,116 @@ print(f"A área do círculo é: {area}")
 # Lógica de Permissão
 idade = 20
 tem_ticket = True
-pode_entrar = (idade >= 18) and tem_ticket
+pode_entrar = (idade &gt;= 18) and tem_ticket
 
 if pode_entrar:
     print("Acesso concedido ao evento!")
 else:
     print("Acesso negado.")</code></pre>
-            <div
-              class="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity"
-            >
-              <img
-                alt="Brand Watermark"
-                class="w-12 h-12 grayscale invert"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRs1ZcBWyfpJZ47qiiz6NhJCS0dnmihjAJ1n0kQLSojvOFQnyKqBGjgCX2nbgmfICQCY6IclQhK-t360LvWpPPeBDQkMiT2u5kdhxlJdFxhwv6Pc_zzvKgsGWro9zlTs7QyMEveKTL7D_Qc96tqRnXvsVEKvpIQ9rceCMVM11hXXva9Wj2GgXNYCcgIDklmKZSA2eeNzqXQweQNTrFzRNnb2kmDGJArDEK6hLsroZOhPTWDKrlmoGM5meoeaAgo5fcMbXLPvoi6Q"
-              />
+              <div class="code-watermark">
+                <img
+                  alt="Brand Watermark"
+                  src="assets/imgs/logo-light-theme.png"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Common Error -->
+          <div class="error-callout-card">
+            <span class="material-symbols-outlined error-callout-icon">warning</span>
+            <div class="error-callout-body">
+              <h3 class="error-callout-title font-label-md">
+                ERRO COMUM: Tipagem Incompatível
+              </h3>
+              <p class="error-callout-desc font-body-md">
+                Você não pode usar operadores aritméticos entre
+                <code class="code-inline-error">int</code> e
+                <code class="code-inline-error">str</code> diretamente.
+                <br /><br />
+                <span class="error-comment font-mono"># Isso causará um TypeError:</span><br />
+                <code class="code-error font-mono">print(10 + "20")</code>
+              </p>
             </div>
           </div>
-        </section>
-        <!-- Common Error -->
-        <div
-          class="bg-error-container border-2 border-error p-6 rounded-xl mb-12 flex gap-4"
-        >
-          <span class="material-symbols-outlined text-error text-3xl"
-            >warning</span
-          >
-          <div>
-            <h3 class="font-label-md text-on-error-container font-bold mb-1">
-              ERRO COMUM: Tipagem Incompatível
-            </h3>
-            <p class="text-body-md text-on-error-container opacity-90">
-              Você não pode usar operadores aritméticos entre
-              <code class="bg-error/10 px-1 rounded">int</code> e
-              <code class="bg-error/10 px-1 rounded">str</code> diretamente.
-              <br /><br />
-              <span class="font-mono text-sm"># Isso causará um TypeError:</span
-              ><br />
-              <code class="text-error font-mono">print(10 + "20")</code>
-            </p>
-          </div>
+
+          <!-- Interactive Lab -->
+          <section class="playground-cta-section">
+            <div class="playground-cta-content">
+              <h2 class="font-headline-md playground-cta-title">Pronto para praticar?</h2>
+              <p class="playground-cta-desc font-body-md">
+                Abra o nosso Playground interativo e teste todos os operadores em
+                tempo real.
+              </p>
+              <button class="playground-cta-btn">
+                Abrir Playground
+              </button>
+            </div>
+            <div class="playground-cta-bg-icon">
+              <span class="material-symbols-outlined">terminal</span>
+            </div>
+          </section>
         </div>
-        <!-- Interactive Lab -->
-        <section
-          class="bg-primary text-on-primary p-8 rounded-xl text-center mb-12 overflow-hidden relative"
-        >
-          <div class="relative z-10">
-            <h2 class="font-headline-md mb-4">Pronto para praticar?</h2>
-            <p class="text-body-md opacity-80 mb-6 max-w-md mx-auto">
-              Abra o nosso Playground interativo e teste todos os operadores em
-              tempo real.
-            </p>
-            <button
-              class="bg-on-primary text-primary px-8 py-3 font-bold rounded-full hover:scale-105 transition-transform"
-            >
-              Abrir Playground
-            </button>
-          </div>
-          <div class="absolute bottom-[-20%] right-[-10%] opacity-10">
-            <span
-              class="material-symbols-outlined text-[200px]"
-              style="font-variation-settings: &quot;wght&quot; 700"
-              >terminal</span
-            >
-          </div>
-        </section>
       </main>
     </div>
+
     <!-- Footer -->
-    <footer
-      class="bg-surface-container border-t border-outline-variant py-12 px-gutter"
-    >
-      <div
-        class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-8"
-      >
-        <div class="md:col-span-2">
-          <div class="flex items-center gap-2 mb-4">
-            <img
-              alt="PyChristus Minimalist Logo"
-              class="w-6 h-6 grayscale"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRs1ZcBWyfpJZ47qiiz6NhJCS0dnmihjAJ1n0kQLSojvOFQnyKqBGjgCX2nbgmfICQCY6IclQhK-t360LvWpPPeBDQkMiT2u5kdhxlJdFxhwv6Pc_zzvKgsGWro9zlTs7QyMEveKTL7D_Qc96tqRnXvsVEKvpIQ9rceCMVM11hXXva9Wj2GgXNYCcgIDklmKZSA2eeNzqXQweQNTrFzRNnb2kmDGJArDEK6hLsroZOhPTWDKrlmoGM5meoeaAgo5fcMbXLPvoi6Q"
-            />
-            <span class="font-headline-md font-bold text-primary"
-              >PyChristus</span
-            >
+    <footer class="site-footer">
+      <div class="site-footer-container">
+        <div class="site-footer-grid">
+          <div>
+            <div class="footer-brand-title">
+              <img
+                alt="PyChristus Minimalist Logo"
+                class="footer-brand-logo"
+                src="assets/imgs/logo-light-theme.png"
+              />
+              <span class="footer-brand-name font-headline-md">PyChristus</span>
+            </div>
+            <p class="footer-description font-body-md">
+              Uma plataforma educacional focada na clareza técnica e precisão
+              acadêmica para o ensino da linguagem Python.
+            </p>
           </div>
-          <p class="text-on-surface-variant text-body-md max-w-sm">
-            Uma plataforma educacional focada na clareza técnica e precisão
-            acadêmica para o ensino da linguagem Python.
-          </p>
+          <div>
+            <h4 class="footer-column-title font-label-md">Recursos</h4>
+            <ul class="footer-links-list font-body-md">
+              <li>
+                <a class="footer-link-item" href="index.html">Documentação</a>
+              </li>
+              <li>
+                <a class="footer-link-item" href="#">Playground</a>
+              </li>
+              <li>
+                <a class="footer-link-item" href="#">Cheat-sheet</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-column-title font-label-md">Suporte</h4>
+            <ul class="footer-links-list font-body-md">
+              <li>
+                <a class="footer-link-item" href="#">GitHub</a>
+              </li>
+              <li>
+                <a class="footer-link-item" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="footer-link-item" href="#">Comunidade</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4 class="font-label-md text-primary mb-4">Recursos</h4>
-          <ul class="space-y-2 text-on-surface-variant font-body-md">
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Documentação</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Playground</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Cheat-sheet</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md text-primary mb-4">Suporte</h4>
-          <ul class="space-y-2 text-on-surface-variant font-body-md">
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#">FAQ</a>
-            </li>
-            <li>
-              <a class="hover:text-primary transition-colors" href="#"
-                >Comunidade</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="max-w-container-max mx-auto mt-12 pt-8 border-t border-outline-variant flex justify-between items-center text-caption text-secondary"
-      >
-        <p>© 2024 PyChristus. Todos os direitos reservados.</p>
-        <div class="flex gap-4">
-          <a class="hover:underline" href="#">Privacidade</a>
-          <a class="hover:underline" href="#">Termos</a>
+        <div class="site-footer-bottom font-body-sm">
+          <p>© 2024 PyChristus. Todos os direitos reservados.</p>
+          <div class="footer-bottom-links">
+            <a class="footer-bottom-link" href="#">Privacidade</a>
+            <a class="footer-bottom-link" href="#">Termos</a>
+          </div>
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
@@ -569,7 +322,6 @@ else:
         });
       });
     </script>
-
     <script src="assets/js/script.js"></script>
   </body>
 </html>
