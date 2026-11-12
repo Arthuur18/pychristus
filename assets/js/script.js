@@ -1,53 +1,46 @@
-// Smooth scrolling for anchor links
-// document.querySelectorAll("a").forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     if (this.getAttribute("href").startsWith("#")) {
-//       e.preventDefault();
-//       const target = document.querySelector(this.getAttribute("href"));
-//       if (target) {
-//         target.scrollIntoView({ behavior: "smooth" });
-//       }
-//     }
-//   });
-// });
-
 // Theme Toggle Logic
-const themeToggleBtn = document.querySelector(".theme-toggle-btn");
 const htmlElement = document.documentElement;
+const themeToggleBtn = document.querySelector("c-topbar").shadowRoot.querySelector(".theme-toggle-btn");
+const logoDark = document.querySelector("c-topbar").shadowRoot.querySelector('.brand-logo.light-logo');
+const logoLight = document.querySelector("c-topbar").shadowRoot.querySelector('.brand-logo.dark-logo');
+
+function setLogo(currentTheme) {
+  if (currentTheme === "dark") {
+    logoLight.style.display = "none";
+    logoDark.style.display = "block";
+  } else {
+    logoDark.style.display = "none";
+    logoLight.style.display = "block";
+  }
+}
 
 function setTheme(theme) {
-  const iconSpan = themeToggleBtn
-    ? themeToggleBtn.querySelector(".material-symbols-outlined")
-    : null;
+  const sunIcon = document.querySelector("c-topbar").shadowRoot.querySelector(".sun-icon");
+  const moonIcon = document.querySelector("c-topbar").shadowRoot.querySelector(".moon-icon");
 
   if (theme === "dark") {
     htmlElement.classList.remove("light");
     htmlElement.classList.add("dark");
-    if (iconSpan) {
-      iconSpan.textContent = "dark_mode";
+    if (sunIcon) {
+      sunIcon.style.display = "none";
+      moonIcon.style.display = "block";
     }
     localStorage.setItem("theme", "dark");
   } else {
     htmlElement.classList.remove("dark");
     htmlElement.classList.add("light");
-    if (iconSpan) {
-      iconSpan.textContent = "light_mode";
+    if (moonIcon) {
+      sunIcon.style.display = "block";
+      moonIcon.style.display = "none";
     }
     localStorage.setItem("theme", "light");
   }
 }
 
-function setLogo(theme) {
-  const logo = document.querySelector(".brand-logo");
-
-  const dynamicSourceLogo = `../assets/imgs/logo-${theme}-theme.png`;
-  logo.src = dynamicSourceLogo;
-}
-
 // Initial theme load
 const savedTheme = localStorage.getItem("theme");
 setTheme(savedTheme);
-setLogo(savedTheme);
+setLogo(savedTheme === "dark" ? "light" : "dark");
 
 // Toggle theme on button click
 if (themeToggleBtn) {
@@ -56,6 +49,6 @@ if (themeToggleBtn) {
       ? "dark"
       : "light";
     setTheme(currentTheme === "dark" ? "light" : "dark");
-    setLogo(currentTheme === "dark" ? "light" : "dark");
+    setLogo(currentTheme);
   });
 }
